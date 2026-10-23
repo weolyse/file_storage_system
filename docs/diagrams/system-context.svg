@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+<title id="title">System context</title>
+<desc id="desc">Proposed system boundary; no distributed physical storage</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<rect width="1200" height="640" fill="white"/>
+<text x="30" y="34" font-size="24" fill="#182638" text-anchor="start" font-weight="bold">System context</text>
+<text x="30" y="62" font-size="15" fill="#526276" text-anchor="start" font-weight="normal">Proposed system boundary; no distributed physical storage</text>
+<rect x="330" y="110" width="540" height="330" rx="12" fill="#f3f6fa" stroke="#235c91" stroke-width="2"/>
+<text x="600" y="150" font-size="21" fill="#182638" text-anchor="middle" font-weight="bold">File storage and processing system</text>
+<text x="600" y="200" font-size="17" fill="#182638" text-anchor="middle" font-weight="normal">React interface and authenticated REST API</text>
+<text x="600" y="243" font-size="17" fill="#182638" text-anchor="middle" font-weight="normal">MVP: upload, list, download and delete</text>
+<text x="600" y="286" font-size="17" fill="#182638" text-anchor="middle" font-weight="normal">Later: independently scalable processing workers</text>
+<text x="600" y="329" font-size="17" fill="#182638" text-anchor="middle" font-weight="normal">One MinIO service for originals and results</text>
+<text x="600" y="372" font-size="17" fill="#182638" text-anchor="middle" font-weight="normal">PostgreSQL metadata; RabbitMQ dispatch later</text>
+<circle cx="100" cy="130" r="17" fill="white" stroke="#182638" stroke-width="2"/><path d="M100,147v45 M72,165h56 M100,192l-24,35 M100,192l24,35" fill="none" stroke="#182638" stroke-width="2"/>
+<text x="100" y="253" font-size="16" fill="#182638" text-anchor="middle" font-weight="bold">File owner</text>
+<circle cx="100" cy="330" r="17" fill="white" stroke="#182638" stroke-width="2"/><path d="M100,347v45 M72,365h56 M100,392l-24,35 M100,392l24,35" fill="none" stroke="#182638" stroke-width="2"/>
+<text x="100" y="453" font-size="16" fill="#182638" text-anchor="middle" font-weight="bold">API integrator</text>
+<circle cx="1090" cy="220" r="17" fill="white" stroke="#182638" stroke-width="2"/><path d="M1090,237v45 M1062,255h56 M1090,282l-24,35 M1090,282l24,35" fill="none" stroke="#182638" stroke-width="2"/>
+<text x="1090" y="343" font-size="16" fill="#182638" text-anchor="middle" font-weight="bold">Operator / QA</text>
+<polyline points="145,175 330,175" fill="none" stroke="#526276" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="235" y="159" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">Browser / HTTPS</text>
+<polyline points="145,365 330,365" fill="none" stroke="#526276" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="235" y="349" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">REST + identity</text>
+<polyline points="1045,267 870,267" fill="none" stroke="#526276" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="960" y="246" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">Deploy, test, inspect</text>
+<rect x="340" y="510" width="520" height="85" rx="12" fill="#f4f0fc" stroke="#6955a3" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="600.0" y="540" font-size="18" fill="#182638" text-anchor="middle" font-weight="bold">YouTrack and Git / CI</text>
+<text x="600.0" y="567" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">Planning and verification; outside runtime request path</text>
+<polyline points="600,510 600,440" fill="none" stroke="#6955a3" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<text x="720" y="478" font-size="14" fill="#6955a3" text-anchor="middle" font-weight="normal">Development support</text>
+</svg>

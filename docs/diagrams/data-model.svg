@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="860" viewBox="0 0 1320 860" role="img" aria-labelledby="title desc">
+<title id="title">Draft relational data model</title>
+<desc id="desc">MVP: users and files. Purple entities are later. All field definitions are proposed.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<rect width="1320" height="860" fill="white"/>
+<text x="30" y="34" font-size="24" fill="#182638" text-anchor="start" font-weight="bold">Draft relational data model</text>
+<text x="30" y="62" font-size="15" fill="#526276" text-anchor="start" font-weight="normal">MVP: users and files. Purple entities are later. All field definitions are proposed.</text>
+<polyline points="320,215 490,215" fill="none" stroke="#526276" stroke-width="2" stroke-linejoin="round"/>
+<text x="405" y="194" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">1 owns 0..*</text>
+<polyline points="180,300 180,500" fill="none" stroke="#6955a3" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<text x="250" y="400" font-size="14" fill="#6955a3" text-anchor="middle" font-weight="normal">1 owns 0..*</text>
+<polyline points="320,575 405,575 405,280 490,280" fill="none" stroke="#6955a3" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<text x="390" y="450" font-size="14" fill="#6955a3" text-anchor="end" font-weight="normal">folder 0..1</text>
+<polyline points="820,215 990,215" fill="none" stroke="#6955a3" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<text x="905" y="194" font-size="14" fill="#6955a3" text-anchor="middle" font-weight="normal">1 has 0..*</text>
+<polyline points="650,360 650,500" fill="none" stroke="#6955a3" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<text x="718" y="430" font-size="14" fill="#6955a3" text-anchor="middle" font-weight="normal">1 has 0..*</text>
+<polyline points="1120,370 1120,500" fill="none" stroke="#6955a3" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<text x="1190" y="435" font-size="14" fill="#6955a3" text-anchor="middle" font-weight="normal">1 emits 0..*</text>
+<polyline points="1050,370 1050,450 790,450 790,500" fill="none" stroke="#6955a3" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<text x="930" y="437" font-size="14" fill="#6955a3" text-anchor="middle" font-weight="normal">job 1 produces 0..*</text>
+<rect x="40" y="130" width="280" height="170" rx="12" fill="#f3f6fa" stroke="#235c91" stroke-width="2"/>
+<text x="180.0" y="160" font-size="18" fill="#182638" text-anchor="middle" font-weight="bold">users · MVP</text>
+<text x="180.0" y="187" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">id PK; email unique</text>
+<text x="180.0" y="209" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">password_hash</text>
+<text x="180.0" y="231" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">created_at</text>
+<rect x="490" y="130" width="330" height="230" rx="12" fill="#f3f6fa" stroke="#235c91" stroke-width="2"/>
+<text x="655.0" y="160" font-size="18" fill="#182638" text-anchor="middle" font-weight="bold">files · MVP</text>
+<text x="655.0" y="187" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">id PK; owner_id FK</text>
+<text x="655.0" y="209" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">object_key unique</text>
+<text x="655.0" y="231" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">name, MIME, size_bytes</text>
+<text x="655.0" y="253" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">lifecycle_state, created_at</text>
+<text x="655.0" y="275" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">folder_id later</text>
+<rect x="990" y="130" width="290" height="240" rx="12" fill="#f4f0fc" stroke="#6955a3" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="1135.0" y="160" font-size="18" fill="#182638" text-anchor="middle" font-weight="bold">jobs · later</text>
+<text x="1135.0" y="187" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">id PK; file_id FK</text>
+<text x="1135.0" y="209" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">operation and version</text>
+<text x="1135.0" y="231" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">state, attempt_count</text>
+<text x="1135.0" y="253" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">claim_token, lease_until</text>
+<text x="1135.0" y="275" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">next_attempt_at, error</text>
+<rect x="40" y="500" width="280" height="170" rx="12" fill="#f4f0fc" stroke="#6955a3" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="180.0" y="530" font-size="18" fill="#182638" text-anchor="middle" font-weight="bold">folders · later</text>
+<text x="180.0" y="557" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">id PK; owner_id FK</text>
+<text x="180.0" y="579" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">parent_id FK (nullable)</text>
+<text x="180.0" y="601" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">name; no cycles</text>
+<rect x="490" y="500" width="330" height="190" rx="12" fill="#f4f0fc" stroke="#6955a3" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="655.0" y="530" font-size="18" fill="#182638" text-anchor="middle" font-weight="bold">artifacts · later</text>
+<text x="655.0" y="557" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">id PK; file_id FK</text>
+<text x="655.0" y="579" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">job_id FK; artifact_kind</text>
+<text x="655.0" y="601" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">object_key; dimensions</text>
+<text x="655.0" y="623" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">One canonical kind / version</text>
+<rect x="990" y="500" width="290" height="190" rx="12" fill="#f4f0fc" stroke="#6955a3" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="1135.0" y="530" font-size="18" fill="#182638" text-anchor="middle" font-weight="bold">outbox · later</text>
+<text x="1135.0" y="557" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">event_id PK; job_id FK</text>
+<text x="1135.0" y="579" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">payload and version</text>
+<text x="1135.0" y="601" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">created_at, published_at</text>
+<text x="1135.0" y="623" font-size="15" fill="#182638" text-anchor="middle" font-weight="normal">attempt_count</text>
+<polyline points="80,670 80,730 260,730 260,670" fill="none" stroke="#6955a3" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<text x="170" y="755" font-size="14" fill="#6955a3" text-anchor="middle" font-weight="normal">Folder parent: 0..1; children: 0..*</text>
+<text x="40" y="810" font-size="16" fill="#182638" text-anchor="start" font-weight="normal">FKs and lifecycle/claim checks enforce ownership and prevent stale completion. MinIO bytes are outside DB transactions.</text>
+</svg>

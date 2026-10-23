@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1050" viewBox="0 0 1200 1050" role="img" aria-labelledby="title desc">
+<title id="title">Use case diagram</title>
+<desc id="desc">Solid: MVP. Dashed purple: later. Protected operations require authenticated ownership.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<rect width="1200" height="1050" fill="white"/>
+<text x="30" y="34" font-size="24" fill="#182638" text-anchor="start" font-weight="bold">Use case diagram</text>
+<text x="30" y="62" font-size="15" fill="#526276" text-anchor="start" font-weight="normal">Solid: MVP. Dashed purple: later. Protected operations require authenticated ownership.</text>
+<rect x="310" y="100" width="650" height="870" rx="12" fill="white" stroke="#235c91" stroke-width="2"/>
+<text x="635" y="128" font-size="18" fill="#182638" text-anchor="middle" font-weight="bold">File management and processing system</text>
+<circle cx="110" cy="385" r="17" fill="white" stroke="#182638" stroke-width="2"/><path d="M110,402v45 M82,420h56 M110,447l-24,35 M110,447l24,35" fill="none" stroke="#182638" stroke-width="2"/>
+<text x="110" y="508" font-size="16" fill="#182638" text-anchor="middle" font-weight="bold">File owner</text>
+<circle cx="1085" cy="815" r="17" fill="white" stroke="#182638" stroke-width="2"/><path d="M1085,832v45 M1057,850h56 M1085,877l-24,35 M1085,877l24,35" fill="none" stroke="#182638" stroke-width="2"/>
+<text x="1085" y="938" font-size="16" fill="#182638" text-anchor="middle" font-weight="bold">Operator / QA</text>
+<polyline points="145,430 430,190" fill="none" stroke="#526276" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="635" cy="190" rx="205" ry="39" fill="#f3f6fa" stroke="#235c91" stroke-width="2"/>
+<text x="635" y="187" font-size="17" fill="#182638" text-anchor="middle" font-weight="bold">Register / sign in</text>
+<text x="635" y="210" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">FR-01 · MVP</text>
+<polyline points="145,430 430,290" fill="none" stroke="#526276" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="635" cy="290" rx="205" ry="39" fill="#f3f6fa" stroke="#235c91" stroke-width="2"/>
+<text x="635" y="287" font-size="17" fill="#182638" text-anchor="middle" font-weight="bold">Upload own file</text>
+<text x="635" y="310" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">FR-03 · MVP</text>
+<polyline points="145,430 430,390" fill="none" stroke="#526276" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="635" cy="390" rx="205" ry="39" fill="#f3f6fa" stroke="#235c91" stroke-width="2"/>
+<text x="635" y="387" font-size="17" fill="#182638" text-anchor="middle" font-weight="bold">List own files</text>
+<text x="635" y="410" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">FR-04 · MVP</text>
+<polyline points="145,430 430,490" fill="none" stroke="#526276" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="635" cy="490" rx="205" ry="39" fill="#f3f6fa" stroke="#235c91" stroke-width="2"/>
+<text x="635" y="487" font-size="17" fill="#182638" text-anchor="middle" font-weight="bold">Download original</text>
+<text x="635" y="510" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">FR-05 · MVP</text>
+<polyline points="145,430 430,590" fill="none" stroke="#526276" stroke-width="2" stroke-linejoin="round"/>
+<ellipse cx="635" cy="590" rx="205" ry="39" fill="#f3f6fa" stroke="#235c91" stroke-width="2"/>
+<text x="635" y="587" font-size="17" fill="#182638" text-anchor="middle" font-weight="bold">Delete own file</text>
+<text x="635" y="610" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">FR-06 · MVP</text>
+<polyline points="145,430 430,690" fill="none" stroke="#6955a3" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<ellipse cx="635" cy="690" rx="205" ry="39" fill="#f4f0fc" stroke="#6955a3" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="635" y="687" font-size="17" fill="#182638" text-anchor="middle" font-weight="bold">Inspect processing and result</text>
+<text x="635" y="710" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">FR-10 / FR-16 · later</text>
+<polyline points="145,430 430,790" fill="none" stroke="#6955a3" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<ellipse cx="635" cy="790" rx="205" ry="39" fill="#f4f0fc" stroke="#6955a3" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="635" y="787" font-size="17" fill="#182638" text-anchor="middle" font-weight="bold">Organize folders</text>
+<text x="635" y="810" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">FR-15 · later</text>
+<ellipse cx="635" cy="895" rx="205" ry="39" fill="#f3f6fa" stroke="#235c91" stroke-width="2"/>
+<text x="635" y="892" font-size="17" fill="#182638" text-anchor="middle" font-weight="bold">Deploy, test and monitor</text>
+<text x="635" y="915" font-size="14" fill="#526276" text-anchor="middle" font-weight="normal">NFR-06 · MVP; NFR-10 · later</text>
+<polyline points="1050,860 840,895" fill="none" stroke="#526276" stroke-width="2" stroke-linejoin="round"/>
+<text x="600" y="1010" font-size="16" fill="#526276" text-anchor="middle" font-weight="normal">Authentication is a precondition, not a repeated login action for each operation.</text>
+</svg>

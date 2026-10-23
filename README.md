@@ -65,7 +65,7 @@ The file API, PostgreSQL/MinIO/RabbitMQ integrations, workers, Docker and Kubern
 
 Binary file contents are stored in S3-compatible MinIO storage, while PostgreSQL stores metadata and processing state. RabbitMQ dispatches background jobs to independent workers so that expensive processing does not block an upload request. Workers read the required objects, perform processing, save generated artifacts, and update processing state.
 
-![Initial system architecture](docs/architecture_diagram.png)
+![Initial system architecture](docs/diagrams/architecture_diagram.png)
 
 ### Selected technologies and components
 
