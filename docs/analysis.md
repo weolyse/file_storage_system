@@ -91,7 +91,30 @@ The form contains 18 questions and takes approximately 5–7 minutes. Required c
 | Feature priorities, privacy and satisfaction | Q14–Q17 | Scope priorities, FR-02/NFR-01 and whether existing tools already meet needs |
 | Application-development experience | Q18 | Relevance of API integration to the developer segment |
 
-**Evidence status:** pending...
+**Evidence status:** preliminary survey findings are available from the supplied CSV export,
+covering 13–24 October 2026.
+All 11 respondents consented and identified themselves as current IT students;
+nine were in Year 3, one in Year 1 and one a postgraduate.
+
+In Q9, five of 11 reported uploads taking longer than practical, three reported delayed previews
+or processed results, and two reported processing failures after upload; these multi-select counts overlap.
+Five reported no issues and one selected “No uploads / cannot recall”.
+In Q11, two respondents reported having to repeat a task and two reported delayed submission or teamwork.
+
+For the hypothetical preview scenario (Q13), four preferred immediate access to the original
+with a separate processing status, two preferred waiting for both, one accepted either behaviour,
+three were unsure and one found the scenario irrelevant.
+Satisfaction with existing tools was mixed (Q16): seven were satisfied, three dissatisfied and one neutral.
+These findings support investigating upload reliability, clear processing states and recovery,
+but do not establish a majority preference for asynchronous previews or a general need to replace existing tools.
+
+Feature-priority rankings from Q14 are withheld because five records exceeded the three-choice limit
+or combined “No additional need” with other features.
+This small convenience sample, concentrated in Year 3 and below the protocol's initial target
+of 30 usable responses, provides exploratory self-reported evidence;
+recruitment channels are not documented in the export, and recall bias and inconsistent answers limit interpretation.
+The survey does not validate performance, scalability or the choice of distributed workers,
+which require the planned experiments.
 
 
 ## 3 Literature review
@@ -555,7 +578,23 @@ Likelihood and impact below are qualitative planning judgments; they are not mea
 
 ## 11 Supervisor feedback
 
-Status: Pending...
+The supervisor considers the project relevant to software engineering and assesses its technical foundation
+and practical value positively. The proposed combination of Spring Boot, PostgreSQL, MinIO and RabbitMQ
+provides a solid basis for separating file storage, metadata management and asynchronous processing.
+The review recommends validating requirements through a survey of IT students and potential users,
+covering file management, processing speed, security and reliability.
+The findings should guide feature priorities and measurable evaluation criteria.
+
+For the next stage, the supervisor recommends implementing the complete workflow:
+file upload, asynchronous task distribution, worker execution and processing-status tracking.
+Particular attention should be given to access control, data consistency, error handling,
+retry mechanisms and recovery from worker failures.
+
+The supervisor also recommends comparing single-worker and multiple-worker configurations
+using throughput, processing time and resource utilization.
+The overall assessment is that validating user requirements, completing core functionality
+and supporting architectural decisions with experimental results will strengthen
+the quality and academic significance of the diploma project.
 
 ## Technical and product references
 
